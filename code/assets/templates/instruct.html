@@ -1,0 +1,96 @@
+
+    <!--Instruct-->
+    <body class="homepage is-preload">
+      <div id="page-wrapper">
+        <section id="header">
+          <div class="container">
+              <h1 id="logo"><img src="/assets/images/logo.svg">&nbsp;&nbsp;&rarr;&nbsp;..</h1>
+              <br>
+              <nav id="nav">
+                <ul>
+                  ###menu###
+                </ul>
+              </nav>
+          </div>
+        </section>
+          <section id="footer">
+            <div class="container">
+              <header>
+                <h2>a Limited Access Progressive Web App (PWA)</h2>
+                <p><strong>###message###</strong></p>
+              </header>
+                <!--EOF(accordionDiv)-->
+                <accordionDiv>
+                    <h3>Why this app..</h3>
+                    <button class="accordion">Who is this for?</button>
+                        <div class="panel" style="display: none">
+                            <hr>
+                            <p>&rarr; This app is a management portal specific to Nano Escrow Service Providers.</p>
+                            <p>
+                              &rarr; To find out more see this
+                              <a href="https://docs.google.com/presentation/d/1062uOxYcW6Ba-Ypt4H89qoM_SkQ3D0TT_TXDWtxn0kc/edit#slide=id.g780b1a3bd9_0_162" target = "_new" >
+                                  Presentation</a>
+                            </p>
+                        </div>
+                        <br>
+                    <button class="accordion">Installing - Android as mobile App (PWA)</button>
+                        <div class="panel" style="display: none">
+                            <p>This works on all <b>Android 4+</b> devices.</p>
+                            <ol>
+                                <li>On your Android device, open <b>CROME</b> browser</li>
+                                <li>Activate <b>https://waynephilip.skunks.co</b> as website</li>
+                                <li>Tap <b>Add to home screen</b> from the <b>&equiv;</b> menu..</li>
+                                <li>Follow the instructions to install App</li>
+                                <li>CLOSE CHROME</li>
+                                <li>There should be an <b>app</b> icon on your phone desktop somewhere</li>
+                            </ol>
+                        </div>
+                        <br>
+                    <button class="accordion">Installing - iOs as Mobile App (PWA)</button>
+                        <div class="panel" style="display: none">
+                            <p>This works on most Apple (iOS) devices..</p>
+                            <ol>
+                                <li>On your iPhone, open <b>SAFARI</b> browser</li>
+                                <li>Activate <b>https://waynephilip.skunks.co</b> as website</li>
+                                <li>Tap the &ldquo;<b>share</b>&rdquo;</li>
+                                <li>Tap <b>Add to home screen</b> option.</li>
+                                <li>Follow the instructions to install the App</li>
+                                <li>CLOSE SAFARI</li>
+                                <li>There should be an <b>App</b> icon on your iPhone desktop somewhere</li>
+                            </ol>
+                        </div>
+                        <br>
+                </accordionDiv>
+                <!--EOF(accordionDiv)-->
+                <div id="copyright" class="container">
+                  <ul class="links">
+                    ###copyStuff###
+                  </ul>
+                </div>
+            </div>
+          </section>
+      </div>
+      <!-- Scripts -->
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+          });
+        }
+        </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        </body>
+      </html>

@@ -1,0 +1,89 @@
+
+	<!--body-->
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+						<!-- Logo -->
+							<h1 id="logo"><a href="#">Invocations</a></h1>
+							<br>
+							<h3>
+								...and other <strong>Nano Escrow</strong> base settings.
+							</h3>
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									###menu###
+								</ul>
+							</nav>
+					</div>
+				</section>
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<header>
+							<!-- <h2>Base Data</h2> -->
+							<p><strong>###message###</strong></p>
+						</header>
+                        <!--------wayne -->
+                        <accordionDiv>
+                            <h3>Base Defaults</h3>
+							<button class="accordion">Invocation Settings</button>
+								<div class="panel" style="display: none">
+									<p>&nbsp;<b>&rarr;</b>&nbsp;###invocationsInvocationsCall###</p>
+									###invocations###
+                                </div>
+								<br>
+                            <button class="accordion">Owners</button>
+								<div class="panel" style="display: none">
+									<p>&nbsp;<b>&rarr;</b>&nbsp;###invocationsOwnersCall###</p>
+									###owners###
+                                </div>
+								<br>
+							<button class="accordion">Owner Types</button>
+								<div class="panel" style="display: none">
+									<p>&nbsp;<b>&rarr;</b>&nbsp;###invocationsOwnerTypesCall###</p>
+									###ownerTypes###
+                                </div>
+								<br>
+							<button class="accordion">Banking (Formal)</button>
+								<div class="panel" style="display: none">
+									<p>&nbsp;<b>&rarr;</b>&nbsp;###invocationsBanksCall###</p>
+									###banks###
+                                </div>
+								<br>
+                        </accordionDiv>
+                        <!--------wayne -->
+					</div>
+					<div id="copyright" class="container">
+						<ul class="links">
+							###copyStuff###
+						</ul>
+					</div>
+				</section>
+		</div>
+		<!-- Scripts -->
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+				  panel.style.display = "none";
+				} else {
+				  panel.style.display = "block";
+				}
+			  });
+			}
+		</script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

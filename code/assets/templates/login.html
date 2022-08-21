@@ -1,0 +1,76 @@
+	<!--NEP-->
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+						<!-- Logo -->
+							<h1 id="logo"><a href="https://surion.io" target="_blank"><img src="/assets/images/logo.svg"></a></h1>
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									###menu###
+								</ul>
+							</nav>
+					</div>
+				</section>
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<header>
+							<h2> Login </h2>
+							<p>By Invitation only</p>
+							<p><strong>###message###</strong></p>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<section>
+									<form method="post" action="interChange.php">
+										<div class="row gtr-50">
+											<input type="hidden" name="postName" value="login">
+											<div class="col-6 col-12-small">
+												<input name="frmLoginName" placeholder="LoginName" type="text">
+											</div>
+											<div class="col-6 col-12-small">
+												<input name="frmLoginPIN" placeholder="PIN" type="text" style="width: 50%;">
+											</div>
+											<div class="col-12">
+												<input type="submit" class="form-button-submit button" value="Login">
+											</div>
+										</div>
+									</form>
+								</section>
+							</div>
+						</div>
+					</div>
+					<div id="copyright" class="container">
+						<ul class="links">
+							###copyStuff###
+						</ul>
+					</div>
+				</section>
+		</div>
+		<!-- Scripts -->
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+				  panel.style.display = "none";
+				} else {
+				  panel.style.display = "block";
+				}
+			  });
+			}
+		</script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

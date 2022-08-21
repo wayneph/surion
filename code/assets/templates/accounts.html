@@ -1,0 +1,87 @@
+	<!--NEP-->
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+						<!-- Logo -->
+							<h1 id="logo"><a href="#">Account Settings</a></h1>
+							<br>
+							<h3>
+								...and <strong>related</strong> settings.
+							</h3>
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									###menu###
+								</ul>
+							</nav>
+					</div>
+				</section>
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<header>
+							<!-- <h2>Base Data</h2> -->
+							<p><strong>###message###</strong></p>
+						</header>
+                        <accordionDiv>
+                            <h3>Account Defaults</h3>
+							<button class="accordion">Account Types</button>
+								<div class="panel" style="display: none">
+									<p>&nbsp;<b>&rarr;</b>&nbsp;###accountsAccountTypesCall###</p>
+									###accountTypes###
+								</div>
+								<br>
+							<button class="accordion">Account Actions</button>
+								<div class="panel" style="display: none">
+									<p>&nbsp;<b>&rarr;</b>&nbsp;###accountsAccountActionsCall###</p>
+									###accountActions###
+                                </div>
+								<br>
+							<button class="accordion">Account Groups &isin; Accounts</button>
+								<div class="panel" style="display: none">
+									<p>&nbsp;<b>&rarr;</b>&nbsp;###accountsAccountGroupsCall###</p>
+									###accountGroups###
+                                </div>
+								<br>
+							<button class="accordion">Account Status Indicators</button>
+								<div class="panel" style="display: none">
+									<p>&nbsp;<b>&rarr;</b>&nbsp;###accountsAccountStatusesCall###</p>
+									###accountStatuses###
+                                </div>
+								<br>
+                        </accordionDiv>
+                        <!--------wayne -->
+					</div>
+					<div id="copyright" class="container">
+						<ul class="links">
+							###copyStuff###
+						</ul>
+					</div>
+				</section>
+		</div>
+		<!-- Scripts -->
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+				  panel.style.display = "none";
+				} else {
+				  panel.style.display = "block";
+				}
+			  });
+			}
+		</script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

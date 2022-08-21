@@ -1,0 +1,78 @@
+{
+	// Place your doTsc workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	"foreach loop":{
+		"scope": "php",
+		"prefix": "_fe",
+		"body": [
+			"foreach ($$array as $$key => $$value) {",
+				"..",
+			"}"
+		],
+		"description": "Switch"
+	},
+	"switchCode":{
+		"scope": "php",
+		"prefix": "_sw",
+		"body": [
+			"switch ($$item){",
+				"case \"xxxxxx\":",
+					"//",
+					"break;",
+				"default:",
+					"//",
+					"break;",
+			"}"
+		],
+		"description": "Switch"
+	},
+	"Print Array to console": {
+		"scope": "php",
+		"prefix": "_pra",
+		"body": [
+			"echo(\"<br>Array:vvaarr(\".__LINE__.\"({$$this->myName}))<br><pre>\"); print_r($$vvaarr); echo(\"</pre><hr>\");"
+		],
+		"description": "Print Page Array"
+	},
+	"Set Trace": {
+		"scope": "php",
+		"prefix": "_tra",
+		"body": [
+			"$$this->trace[]=\"method::<b>\".__METHOD__.\"</b>->Line::<b>\".__LINE__.\"</b>\";"
+		],
+		"description": "Output trace"
+	},
+	"Print Trace": {
+		"scope": "php",
+		"prefix": "_prtr",
+		"body": [
+			"echo(\"<br>Array:pageArray(\".__LINE__.\"({$$this->myName}))<br><pre>\"); print_r($$this->trace); echo(\"</pre><hr>\");"
+		],
+		"description": "Output code array trace"
+	},
+	"For Loop": {
+		"scope": "php",
+		"prefix": "_fr",
+		"body": [
+			"for($$n=0;$$n<count($$searchArray);$$n++){",
+				"..",
+			"}"
+		],
+		"description": "For counting Loop"
+	},
+	"If condition": {
+		"scope": "php",
+		"prefix": "_if",
+		"body": [
+			"if($$val1==0;$$val2){",
+				"..",
+			"}"
+		],
+		"description": "simple if"
+	}
+}

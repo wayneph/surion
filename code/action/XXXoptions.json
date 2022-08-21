@@ -1,0 +1,26 @@
+[
+    {
+        "area":"accountTypes",
+        "type":"options",
+        "field":"parentId",
+        "action":"accountTypes~id~name"
+    },
+    {
+        "area":"accountTypes",
+        "type":"fixedList",
+        "field":"kycLevel",
+        "action":"fixedOptions~0=None|1=Full|2=limited|3=special|4=unsure|5=Parent Bank|9=Not Applied"
+    },
+    {
+        "area":"owners",
+        "type":"options",
+        "field":"ownerTypeId",
+        "action":"ownerTypes~id~name"
+    },
+    {
+        "area":"owners",
+        "type":"fixedList",
+        "field":"status",
+        "action":"fixedOptions~0=inActive|1=Active|9=deprecated"
+    }
+]

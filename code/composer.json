@@ -1,0 +1,8 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/database": "^9.24",
+        "parse/php-sdk" : "1.5.*",
+        "mongodb/mongodb": "^1.12"
+    }
+}

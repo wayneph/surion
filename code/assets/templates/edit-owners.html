@@ -1,0 +1,64 @@
+<div class="row">
+    <form method="post" action="interChange.php">
+        <table>
+            <tr>
+                <td colspan="2"><!--HIDDEN INPUTS-->
+                    <input type="hidden" name="postName" value="ownerPatch">
+                    <input type="hidden" name="guid" value="###guid###">
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" style="background-color: beige;"> owner [ ###name### ] information:</th>
+            </tr>
+            <tr>
+                <td>
+                    <label style="text-align: right;">Owner Name:</label>
+                </td>
+                <td style="width:68%;">
+                    <input name="name" placeholder="Owner Name" value="###name###" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="text-align: right;">Owner Entity or Foreign Key:</label>
+                </td>
+                <td>
+                    <input name="entityId" placeholder="Owner Entity" value="###entityId###" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="text-align: right;">Primary Account Id (SmAcc):</label>
+                </td>
+                <td>
+                    <input name="accountId" placeholder="Owner Entity" value="###accountId###" type="text" style="width: 30%;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="text-align: right;">Owner Type:</label>
+                </td>
+                <td>
+                    <select id="frmOwnerTypeId" name="ownerTypeId">
+                        ~~~ownerTypeId~~~
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="text-align: right;">Owner Status:</label>
+                </td>
+                <td>
+                    <select id="frmOwnerStatus" name="status" style="width:30%">
+                        ~~~status~~~
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" class="form-button-submit button" value="Change [ ###name### ]">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

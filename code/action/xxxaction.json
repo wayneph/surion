@@ -1,0 +1,29 @@
+[
+    {
+        "code":"b132392a317588e56460e77a8fd74229",
+        "action":"owners"
+    },
+    {
+        "code":"086bee0c2a46e78d607fdbb1e64a8135",
+        "action":"accountTypes"
+    },
+    {
+        "code":"de95b43bceeb4b998aed4aed5cef1ae7",
+        "action":"edit"
+    },
+    {
+        "code":"099af53f601532dbd31e0ea99ffdeb64",
+        "action":"delete"
+    },
+    {
+        "code":"d329fd777726c300d7a044e482b967e7",
+        "action":"clone"
+    },
+    {
+        "code":"b80bb7740288fda1f201890375a60c8f",
+        "action":"id"
+    },
+    {   "code":"ecae13117d6f0584c25a9da6c8f8415e",
+        "action":"read"
+    }
+]

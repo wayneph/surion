@@ -1,0 +1,83 @@
+<!-- PATCH -->
+<div class="row">
+    <form method="post" action="interChange.php">
+        <table>
+            <!-- hidden -->
+            <tr>
+                <td colspan="2"><!--HIDDEN INPUTS-->
+                    <input type="hidden" name="postName" value="accountTypesPatch">
+                    <input type="hidden" name="guid" value="###guid###">
+                </td>
+            </tr>
+            <!-- heading -->
+            <tr>
+                <th colspan="2" style="background-color: rgb(240, 220, 245);">UPDATE (PATCh)account Type [ ###name### ] information:</th>
+            </tr>
+            <!-- name -->
+            <tr>
+                <td>
+                    <label style="text-align: right;">Account Type Name:</label>
+                </td>
+                <td style="width:68%;">
+                    <input name="name" placeholder="Owner Name" value="###name###" type="text">
+                </td>
+            </tr>
+            <!-- description -->
+            <tr>
+                <td>
+                    <label style="text-align: right;">Description:</label>
+                </td>
+                <td style="width:68%;">
+                    <input name="description" placeholder="Description" value="###description###" type="text">
+                </td>
+            </tr>
+            <!-- slug -->
+            <tr>
+                <td>
+                    <label style="text-align: right;">Slug CodeXX:</label>
+                </td>
+                <td style="width:68%;">
+                    <input name="slug" placeholder="Owner Name" value="###slug###" type="text">
+                </td>
+            </tr>
+            <!-- kyc Level -->
+            <tr>
+                <td>
+                    <label style="text-align: right;">KYC level(s):</label>
+                </td>
+                <td>
+                    <select id="frmKycLevelId" name="kycLevel">
+                        ###options~kycLevel###
+                    </select>
+                </td>
+            </tr>
+            <!-- parentId -->
+            <tr>
+                <td>
+                    <label style="text-align: right;">Primary Account Id (SmAcc):</label>
+                </td>
+                <td>
+                    <select id="frmParentId" name="parentId">
+                        ###options~accountTypeParentId###
+                    </select>
+                </td>
+            </tr>
+            <!-- status -->
+            <tr>
+                <td>
+                    <label style="text-align: right;">Account Type Status:</label>
+                </td>
+                <td>
+                    <select id="frmOwnerStatus" name="status" style="width:30%">
+                        ###options~statusStandard###
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" class="form-button-submit button" value="Change [ ###name### ]">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

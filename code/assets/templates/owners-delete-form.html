@@ -1,0 +1,46 @@
+<div class="row">
+    <form method="post" action="interChange.php">
+        <table>
+            <tr>
+                <td colspan="2">
+                    <input type="hidden" name="postName" value="ownersPatch">
+                    <input type="hidden" name="owners-patch_where" value="guid=###guid###">
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" style="background-color: beige;padding-left: 1em;">Delete owner ###name### information:</th>
+            </tr>
+            <tr>
+                <td>
+                    <label style="text-align: right;">Owner Name:</label>
+                </td>
+                <td style="width:68%;">
+                    <input name="frmOwnerName" placeholder="Owner Name" value="###name###" type="text" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="text-align: right;">Owner Entity:</label>
+                </td>
+                <td>
+                    <input name="frmOwnerEntity" placeholder="Owner Entity" value="###entityId###" type="text" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="text-align: right;">Owner Type:</label>
+                </td>
+                <td>
+                    <select id="ownerTypeId" name="frmOwnerType" disabled="true">
+                        ###options~ownerTypeId###
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" class="form-button-submit button" value="Delete Owner ###name###">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
